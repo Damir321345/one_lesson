@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
-func Hello() string {
-	return "Hello world"
+const englHelloPregix = "Hello "
+
+func Hello(name string) string {
+	return englHelloPregix + name
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("Любое значение"))
 }
